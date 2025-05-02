@@ -1,13 +1,40 @@
-# Data Science Projects
+# Project: Predicting Diamond Prices
+## Overview
+This project aims to develop predictive models for diamond prices using various methods. We'll explore the relationship between diamond attributes (carat, cut, clarity, and color) and their corresponding prices.
 
-## Multiple projects, including:
-1. Text pre-processing for GPTs. This project demonstrates how to preprocess textual data for use in training or fine-tuning a Large Language Model (LLM). 
-The goal is to clean, normalize, and tokenize input text to prepare it as features for the model. 
-Uses Python with libraries such as PyTorch and the `re` module for regular expression operations.
+## Data Source
+The dataset used in this project is based on publicly available data from the Kaggle Diamonds Dataset . This dataset contains 53940 entries across various attributes.
 
-2. Multivariate Linear Regression of marathon training data. This project uses my real world data to evaluate which dependent variables most influence the pace of running during training. 
+## Methodology
+This project involves multiple steps:
 
-### Prerequisites
-Uses following Python packages:
-- PyTorch: For handling tensors and neural network models.
-- `re`: Python's built-in module for working with Regular Expressions.
+Data Preprocessing: Clean and preprocess the data by handling missing values, encoding categorical variables.
+Modeling:
+Linear Regression with Lasso Regularization: Use glmnet package in R to perform least squares regression using Lasso regularization.
+Unpruned Decision Trees: Implement decision trees using the rpart package in R and evaluate their performance on the dataset.
+Pruned Decision Trees: Utilize the rpart package to prune the decision trees and improve generalization.
+Random Forests: Employ the randomForest package in R to create an ensemble model combining multiple decision trees.
+
+## R Scripts
+The project includes three Jupyter Notebook files:
+
+data_preprocessing.Rmd: Contains code for data cleaning, encoding, and preprocessing.
+modeling.Rmd: Implements the modeling steps (Lasso regression, unpruned and pruned decision trees, and random forests).
+results.Rmd: Summarizes model performance metrics (e.g., R-squared, mean squared error) and visualizations.
+
+## Results
+The project evaluates each model using various metrics:
+
+Mean Squared Error (MSE)
+Root Mean Squared Percentage Error (RMSPE)
+R-squared value
+Coefficient of Determination (R^2)
+We'll compare the performance of each model to determine which one provides the best predictions.
+
+## Requirements
+To run this project, you'll need:
+
+R (version 3.6.1 or later) with necessary packages installed (glmnet, randomForest, etc.)
+Jupyter Notebook
+A compatible Python environment for running the notebooks (optional)
+This project aims to serve as a starting point for further exploration and improvement of diamond price prediction models!
