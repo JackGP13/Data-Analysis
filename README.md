@@ -1,19 +1,26 @@
 # Project Overview
-Welcome to my Data Analysis repository! This collection of projects showcases various data analysis tasks I've undertaken using R and Python programming languages utilizing Jupyter Notebooks. The datasets used in these projects come from a mix of sources (listed below), including personal data.
+A collection of data analysis projects using Python and R. Each folder contains a  Jupyter Notebooks and a project-level README with more detail. The datasets used in these projects come from a mix of sources (listed below), including personal data.
 
 ## Repository Structure
 The repository is organized into multiple folders, each containing a separate project:
 
-Diamond Analysis: Analysis of Diamonds.csv using R and jupyter notebooks to predict the price of a diamond
-Rivian Marketing Analysis: Exploratory data analysis using R and jupyter notebooks to examine demand curve for Rivian EVs
-Marathon Training Analysis: Manually exported apple health data analyzed with python and jupyter notebooks to predict marathon race pace
+### Marathon Training Analysis: Python
+I manually exported my Apple Health data across a full training cycle and tried to build a model that could predict my marathon race time. Used multivariate linear regression and LASSO regularization to find the variables that actually mattered. Ambient temperature turned out to be the dominant predictor, even more than total distance. Validated the model's predicted range against three prior race results.
+
+### Rivian EV Pricing Analysis: R
+A marketing analytics project from UC Berkeley Haas. Used survey data from a third-party firm to model customer willingness-to-pay for a Rivian SUV and identify the optimal price point. Analysis found that younger, politically liberal men showed the highest willingness to pay, suggesting where Rivian's marketing spend would have the most impact.
+
+### Diamond Price Prediction: R
+Regression analysis on a Kaggle dataset to predict diamond prices from cut, color, clarity, and carat. Primarily an exercise in exploratory data analysis and feature engineering.
+
 ...
 ## Datasets Used
 Some datasets used in these projects are sourced from online repositories, while others are based on personal experience. The following online sources were used:
 
-Kaggle Datasets
-Survey Data provided by marketing firm (not allowed to disclose which)
 My own Apple Health data
+Survey Data provided by third-party marketing firm
+Kaggle Datasets
+
 
 For more information on the specific datasets used for each project, please refer to their respective README files or documentation.
 
@@ -41,5 +48,3 @@ Please consult these individual README files for specific details about each pro
 
 # Contributions and Feedback
 Feel free to fork this repository, contribute your own projects or datasets, or provide feedback on existing work. I'm always interested in discussing data analysis approaches and learning from others!
-
-Note: This is just a starting point, and you can customize it as needed for your specific projects and workflow. Good luck with your GitHub repository!
