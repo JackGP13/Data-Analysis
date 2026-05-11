@@ -18,7 +18,9 @@ Regression analysis on a Kaggle dataset to predict diamond prices from cut, colo
 Some datasets used in these projects are sourced from online repositories, while others are based on personal experience. The following online sources were used:
 
 My own Apple Health data
+
 Survey Data provided by third-party marketing firm
+
 Kaggle Datasets
 
 
